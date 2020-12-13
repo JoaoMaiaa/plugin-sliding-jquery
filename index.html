@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste sliding</title>
+    <style>
+
+        .title{
+            text-align:center;
+            margin-bottom:200px;
+        }
+
+        .mani{
+            display:inline-block;
+            margin-right:40%;
+            max-width:500px;   
+        }
+
+        .mani2{
+            display:inline-block;
+            margin-left:60%;
+            max-width:500px;            
+        }
+
+        .top{
+            height:100vh;
+            text-align:center;
+        }
+
+        .divTop2{
+            display:flex;
+            flex-direction:column;
+        }
+
+        .top2{
+            height:100vh;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 class="title">Home</h1>
+
+    <div class="top">
+        <div class="mani">
+            <h1>Contato</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia veniam, sequi, tempore, a placeat nobis dolorum omnis iusto numquam ratione modi? Repudiandae fugit alias id asperiores! Cupiditate quisquam a ad?</p>
+        </div>
+    </div>
+    <div class="top">
+        <div class="mani">
+            <h1>Sobre</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia veniam, sequi, tempore, a placeat nobis dolorum omnis iusto numquam ratione modi? Repudiandae fugit alias id asperiores! Cupiditate quisquam a ad?</p>
+        </div>
+    </div>
+
+    <div class="top">
+        <div class="mani">
+            <h1>Produtos</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia veniam, sequi, tempore, a placeat nobis dolorum omnis iusto numquam ratione modi? Repudiandae fugit alias id asperiores! Cupiditate quisquam a ad?</p>
+        </div>
+    </div>
+
+    <h1 class="title">Home</h1>
+
+    <div class="divTop2">
+
+        <div class="top2">
+            <div class="mani2">
+            <h1>Contato2</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia veniam, sequi, tempore, a placeat nobis dolorum omnis iusto numquam ratione modi? Repudiandae fugit alias id asperiores! Cupiditate quisquam a ad?</p>
+        </div>
+        </div>
+        <div class="top2">
+            <div class="mani2">
+            <h1>Sobre2</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia veniam, sequi, tempore, a placeat nobis dolorum omnis iusto numquam ratione modi? Repudiandae fugit alias id asperiores! Cupiditate quisquam a ad?</p>
+        </div>
+        </div>
+
+        <div class="top2">
+            <div class="mani2">
+            <h1>Produtos2</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia veniam, sequi, tempore, a placeat nobis dolorum omnis iusto numquam ratione modi? Repudiandae fugit alias id asperiores! Cupiditate quisquam a ad?</p>
+        </div>
+        </div>
+
+    </div>
+    
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="sld.js"></script>
+<script>
+
+$(()=>{
+    $(window).sld('.mani','.mani2');
+});
+
+</script>
+
+</body>
+</html>
